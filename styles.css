@@ -1,0 +1,27 @@
+/*body {
+    background:burlywood;
+    font-family: "poppins";
+    margin: 0px;
+    padding: 0px;
+}*/
+
+.ingreso {
+    text-align: center;
+    margin-top: 200px;
+}
+
+h1 {
+    font-size: 60px;
+    margin :0;
+}
+
+h2 {
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+header {
+    background: url(images/fondo.png);
+    height: 100vh;
+    background-size: cover;
+}
