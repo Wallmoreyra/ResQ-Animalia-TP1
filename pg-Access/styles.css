@@ -6,9 +6,10 @@ body{
 }
 
 footer {
-    background-color: #440035;
-    color: #fff;
-    padding: 20px;
+    font-weight: bold;
+    background-color: #000;
     text-align: center;
-    margin-top: 20px;
-  }
+    line-height: 5vh;
+    color: #fff;
+    height: 5vh;    
+}
