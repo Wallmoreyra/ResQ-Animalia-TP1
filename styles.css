@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Papy";
+    src: url('./fonts/Papyrus.ttf') format('truetype');
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -5,12 +10,30 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.wrapper {
-    width: 100%;
-    min-height: 100vh;
-    background-image:linear-gradient(rgba(0,0,0,0.60), rgba(0,0,0,0.10)), url(./images/fondo.png);
+.inicio {
+    display: flex;
+    flex-direction: row;
+}
+
+.izquierda {
+    width: 50%;
+    min-height: 95vh;
+    background-image:linear-gradient(rgba(0,0,0,0.60), rgba(0,0,0,0.10)), url(./images/fondo.jpg);
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.derecha {
+    width: 50%;
+    min-height: 95vh;
+    background-color: #202020;
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -23,31 +46,43 @@
     line-height: 1;
 }
 
-.content h1 {
-    font-size: 55px;
+.izquierda .content h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 70px;
     font-weight: 800;
-    letter-spacing: 1.5px;
-    color: #fff;
+    color: #ffc976;
 }
 
-.content p {
-    font-family: sans-serif;
-    font-size: 17px;
+.izquierda .content p {
+    font-weight: bold;
+    font-size: 25px;
     margin: 25px;
     line-height: 1.5;
     color: #fff;
 }
 
+.derecha .content p {
+    font-weight: bold;
+    font-size: 25px;
+    margin: 25px;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.logo {
+    width: 70%;
+}
+
 .content .button a {
     appearance: none;
-    background-color: #2954a5;
+    background-color: #2954a571;
     border: 2px solid #1A1A1A;
     border-radius: 15px;
     box-sizing: border-box;
     color: #FFFFFF;
     cursor: pointer;
     display: inline-block;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 600;
     line-height: normal;
     margin: 0;
@@ -76,4 +111,13 @@
 .content .button a:active {
     box-shadow: none;
     transform: translateY(0);
+}
+
+footer {
+    font-weight: bold;
+    background-color: #000;
+    text-align: center;
+    line-height: 5vh;
+    color: #fff;
+    height: 5vh;    
 }
