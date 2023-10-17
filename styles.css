@@ -1,9 +1,9 @@
 @font-face {
-    font-family: "Papy";
+    font-family: "Papyrus";
     src: url('./fonts/Papyrus.ttf') format('truetype');
 }
 
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;

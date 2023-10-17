@@ -1,8 +1,65 @@
-body{
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
-    background-color: #f1f1f1;
+@font-face {
+    font-family: "Papyrus";
+    src: url('../fonts/Papyrus.ttf') format('truetype');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contenedor {
+    background-color: #203855;
+    color: #ffffff;
+}
+
+.menu {
+    font-weight: bold;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 50px;
+}
+
+.logo a {
+    margin: 30px;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.lista {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin-right: 100px;
+}
+
+.lista li {
+    margin-right: 0.5rem;
+    margin-left: 25px;
+}
+
+.imagen {
+    width: 100%;
+    min-height: 70vh;
+    background-image:linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1)), url(../images/hamster-portada.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 footer {
