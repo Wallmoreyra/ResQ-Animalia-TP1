@@ -4,3 +4,12 @@ body{
     padding: 20px;
     background-color: #f1f1f1;
 }
+
+footer {
+    font-weight: bold;
+    background-color: #000;
+    text-align: center;
+    line-height: 5vh;
+    color: #fff;
+    height: 5vh;    
+}
