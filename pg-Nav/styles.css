@@ -4,3 +4,52 @@ body{
     padding: 20px;
     background-color: #f1f1f1;
 }
+
+.botonActualizar{
+
+}
+
+.contenedor{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card {
+    margin-top: 2rem;
+    background-color: rgba(136, 133, 133, 0.4);
+    border-radius: 10px;
+    width: 350px;
+    height: 400px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.card h3{
+    margin-top: 0.5rem;
+}
+
+.card a{
+    width: 80%;
+    background-color: #f1f1f1;
+    height: 80%;
+    border-radius: 10px;
+}
+
+.racAge{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.racAge p{
+    border: 1px;
+}
+
