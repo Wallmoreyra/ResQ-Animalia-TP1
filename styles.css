@@ -17,7 +17,7 @@
 
 .izquierda {
     width: 50%;
-    min-height: 95vh;
+    min-height: 96vh;
     background-image:linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.10)), url(./images/fondo.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -30,7 +30,7 @@
 
 .derecha {
     width: 50%;
-    min-height: 95vh;
+    min-height: 96vh;
     background-image: radial-gradient(rgba(0,0,0,1), rgba(0,0,0,0.1)), url(./images/index-texture.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -123,10 +123,10 @@ footer {
     background-color: #000;
     text-align: center;
     color: #fff;
-    position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
+    height: 4vh;
 }
 
 footer div {
@@ -175,5 +175,13 @@ footer div b {
     }
     .derecha {
         width: 100%;
+    }
+    footer {
+        height: auto;
+        /* position: static;
+        bottom: auto;
+        left: auto;
+        margin-top: 5vh;
+        padding-top: 3vh; */
     }
 }
