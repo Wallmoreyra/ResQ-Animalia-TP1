@@ -5,6 +5,45 @@ body{
     background-color: #f1f1f1;
 }
 
+.detAnim{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.detAnim div{
+    /* width: 45%; */
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.nameImg {
+    padding: 1rem;
+    width: 50%;
+}
+
+.nameImg img{
+    background-color: red;
+    height: 400px;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.nameDatos{
+    width: 40%;
+    text-align: left;
+    transition: 1.5s;
+}
+
+.aniDescrip{
+    width: 90%;
+}
+
 footer {
     display: flex;
     flex-direction: row;
@@ -67,4 +106,13 @@ footer div b {
     .derecha {
         width: 100%;
     }
+    .detAnim{
+        flex-direction: column;
+    }
+    .detAnim div{
+        width: 95%;
+    }
+    footer{
+        padding-bottom: 1rem;
+      }
 }
