@@ -59,6 +59,52 @@ body{
     color: #fff;
 }
 
+.formulario{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #000;
+}
+.formulario div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario label{
+    color: black;
+    font-size: large;
+    font-weight: bold;  
+}
+
+.cuadroIngreso{
+    width: 30vh;
+}
+
+.boton{
+    margin-top: 1rem;
+    width: 15vh;
+    height: 3vh;
+    border-radius: 51px;
+    background: #0e269a;
+    box-shadow: inset 13px 13px 26px #0a1a69, inset -13px -13px 26px #1232cb;
+    color: #f1f1f1;
+    font-weight: bold;
+    font-size: 1.5vh;
+}
+
+.boton:hover {
+    color: black;
+    background: #f1f1f1;
+    font-size: 1.75vh;
+    box-shadow: inset 13px 13px 26px #e0e0e3, inset -13px -13px 26px #d7d8d9;
+   }
+
+.enviar{
+    margin-bottom: 1rem;
+}
+
 footer {
     display: flex;
     flex-direction: row;
