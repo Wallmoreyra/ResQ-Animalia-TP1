@@ -82,6 +82,9 @@ body{
     display: flex;
     flex-direction: column;
 }
+.card img{
+    height: 300px;
+}
 
 .card h3{
     margin-top: 0.5rem;

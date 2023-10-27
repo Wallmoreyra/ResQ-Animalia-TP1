@@ -58,6 +58,65 @@ body{
     color: #fff;
 }
 
+.botonDeRetorno{
+    width: 150px;
+    height: 50px;
+    border: 1px solid #333;
+    font-size: 20px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 0;
+    transition: 1s;
+    color: #000;
+    font-family: sans-serif;
+}
+.botonDeRetorno::before,
+.botonDeRetorno::after {
+  position: absolute;
+  background: #e8e8e8;
+  z-index: -1;
+  transition: 1s;
+  content: "";
+}
+
+.botonDeRetorno::before {
+  height: 50px;
+  width: 130px;
+}
+
+.botonDeRetorno::after {
+  width: 150px;
+  height: 30px;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.botonDeRetorno:hover::before {
+  width: 0px;
+  background: #e8e8e8;
+}
+
+.botonDeRetorno:hover::after {
+  height: 0px;
+  background: #fff;
+}
+
+.botonDeRetorno:hover {
+  background: #fff;
+}
+
+
 .detAnim{
     display: flex;
     flex-flow: wrap;

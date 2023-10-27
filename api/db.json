@@ -1,0 +1,65 @@
+{
+    "animales":[
+        {
+            "id":1,
+            "nombre":"Leon!!",
+            "imagen": {
+                "00":"../images/gato00_00.jpg",
+                "01":"xxx",
+                "02":"xxx"
+            },
+            "edad": "xx2",
+            "localidad": "xx3",
+            "raza": "xx4",
+            "especie": "felino",
+            "tamañoHabitad": "xxx5",
+            "cuidadosEspeciales": "algudo a de tener",
+            "descripcion": "algo a de decir"
+        },
+        {
+            "id":2,
+            "nombre":"El patas",
+            "imagen": {
+                "00":"../images/gato01_00.jpg",
+                "01":"xxx",
+                "02":"xxx"
+            },
+            "edad": "xx2",
+            "localidad": "xx3",
+            "raza": "xx4",
+            "tamañoHabitad": "xxx5",
+            "cuidadosEspeciales": "algudo a de tener",
+            "descripcion": "algo a de decir"
+        },
+        {
+            "id":3,
+            "nombre":"Elchongo!!!!",
+            "imagen": {
+                "00":"../images/gato03_00.jpg",
+                "01":"xxx",
+                "02":"xxx"
+            },
+            "edad": "xx2",
+            "localidad": "xx3",
+            "raza": "xx4",
+            "tamañoHabitad": "xxx5",
+            "cuidadosEspeciales": "algudo a de tener",
+            "descripcion": "algo a de decir"
+        },
+        {
+            "id":4,
+            "nombre":"ElRengo!!!!",
+            "imagen": {
+                "00":"../images/perro03_00.jpg",
+                "01":"xxx",
+                "02":"xxx"
+            },
+            "edad": "xx2",
+            "localidad": "xx3",
+            "raza": "xx4",
+            "tamañoHabitad": "xxx5",
+            "cuidadosEspeciales": "algudo a de tener",
+            "descripcion": "algo a de decir"
+        }
+    ]
+}
