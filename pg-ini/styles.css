@@ -12,32 +12,43 @@
 
 body {
     scroll-behavior: smooth;
+    background: #f5f5f5;
 }
 
+/*--------------------------------------------------------------
+# NavBar
+--------------------------------------------------------------*/
 .navbar-container {
-    background-color: #203855;
-    color: #fff;
+    width: 100%;
+    background-color: #1e699b;
     font-weight: bold;
     justify-content: space-between;
     display: flex;
+    flex-direction: row;
     align-items: center;
+    position: fixed;
+}
+
+.navbar-container div {
+    width: 50%;
 }
 
 .logo {
-    margin-left: 0vh;
-}
-
-.logo a {
-    align-items: center;
+    width: 100%;
+    /* background-color: #00acee; */
+    justify-content: flex-start;
     display: flex;
-    flex-direction: row;
+    padding: 10px;
+    padding-left: 15%;
 }
 
 .navbar ul {
+    width: 100%;
+    /* background-color: #c13584; */
     display: flex;
     justify-content: flex-end;
     list-style: none;
-    margin-right: 20%;
+    padding-right: 30%;
 }
 
 .navbar li {
@@ -45,30 +56,208 @@ body {
     margin-left: 25px;
 }
 
-.link {
+.navbar li a {
     text-decoration: none;
     color: #fff;
+    position: relative;
+    transition: all ease-in-out 250ms;
 }
 
-.imagen {
+.navbar li a::after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 0.4em;
+    width: 0%;
+    background-color:#ffa600;
+    bottom: -0.5em;
+    transition: all ease-in-out 250ms;
+}
+
+.navbar li a:hover::after {
+    width: 100%;
+}
+
+.navbar li a:hover {
+    color: #ffa600;
+}
+
+/*--------------------------------------------------------------
+# Banner / Fondo y textos
+--------------------------------------------------------------*/
+.banner {
     width: 100%;
     min-height: 300px;
-    background-image:linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.6)), url(../images/banner.jpg);
+    background-image:linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.5)), url(../images/banner.jpg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    height: 100vh;
 }
 
-.div-banner .imagen .logo-banner p {
+.banner .banner-titulo {
+    width: 100%;
+    text-align: right;
+    justify-content: center;
+    padding-right: 5%;
+}
+
+.banner .banner-texto {
+    width: 100%;
+    text-align: right;
+    justify-content: center;
+    padding-right: 5%;
+}
+
+.banner .banner-titulo h1 {
     color: #ffa600;
-    font-size: 150px;
-    font-family: "Roboto", sans-serif;
-    text-align: center;
+    font-size: 4em;
+    font-family: "Roboto Slab", sans-serif;
+    padding-bottom: 5vh;
 }
 
+.banner .banner-texto h2 {
+    color: #f1f1f1;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+.banner .banner-texto h3 {
+    color: #f1f1f1;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+/*--------------------------------------------------------------
+# Banner / Boton Adopta!
+--------------------------------------------------------------*/
+.banner .botonAdop {
+    width: 100%;
+    text-align: right;
+    justify-content: right;
+    padding-right: 5%;
+}
+
+.banner .botonAdop a {
+    appearance: none;
+    background-color: #2954a571;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 500ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+}
+
+.banner .botonAdop a:disabled {
+    pointer-events: none;
+}
+
+.banner .botonAdop a:hover {
+    background-color: #2954a5;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+}
+
+.banner .botonAdop a:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+/*--------------------------------------------------------------
+# Video
+--------------------------------------------------------------*/
+.video {
+    display: flex;
+    flex-direction: column;
+    background-color: #212529;
+    min-height: 60vh;
+    align-items: center;
+    justify-content: center;
+}
+
+/*--------------------------------------------------------------
+# FormContacto
+--------------------------------------------------------------*/
+#contacto {
+    display: flex;
+    flex-direction: column;
+    /* background: url(../images/backwave.svg) no-repeat,#fff;
+    background-position-y: top; */
+    align-items: center;
+    padding: 3rem;
+    color: #000;
+    background-color: #212529;
+    transform: skewY(175deg);
+}
+
+#contacto .contenedor .form-contacto {
+    display: flex;
+    flex-direction: column;
+    transform: skewY(5deg);
+}
+
+#contacto .contenedor .form-contacto div {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+#contacto .contenedor .form-contacto label {
+    color: #000;
+    font-size: large;
+    font-weight: bold;  
+}
+
+#contacto .contenedor .form-contacto .btnForm {
+    align-items: center;
+}
+
+#contacto .contenedor .form-contacto .btn {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 15vh;
+    height: 3vh;
+    border-radius: 51px;
+    background: #0e259a;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5vh;
+    will-change: transform;
+}
+
+#contacto .contenedor .form-contacto .btn:hover {
+    transition: 0.5s;
+    background-color: #2954a5;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+   }
+
+.relleno {
+    background-color: #212529;
+    height: 10vh;
+}
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
 footer {
     display: flex;
     flex-direction: row;
@@ -82,6 +271,7 @@ footer {
     left: 0;
     width: 100%;
     height: 4vh;
+    /* position: fixed; */
 }
 
 footer div {
@@ -120,6 +310,9 @@ footer div b {
     color: #25d366;
 }
 
+/*--------------------------------------------------------------
+# Responsivo
+--------------------------------------------------------------*/
 @media (max-width: 768px) {
     .inicio {
         display: flex;

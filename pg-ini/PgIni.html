@@ -12,45 +12,88 @@
     <link rel="icon" href="./images/l_blk.png">
 </head>
 <body>
+    <!-- Barra Navegacion -->
     <div class="navbar-container">
         <div class="logo">
             <a href="../index.html" class="navbar-logo">
-                <img src="../images/l_bco_comp.png" alt="ResQAnimalia" width="200" height="100">
+                <img src="../images/l_bco_comp.png" alt="ResQAnimalia" width="150" height="75">
             </a>
         </div>
         <div class="navbar">
             <ul>
-                <li class="primer_elemento"><a href="../pg-ini/PgIni.html" class="link">Inicio</a></li>
-                <li><a href="../pg-ini/PgIni.html#Nosotros" class="link">Nosotros</a></li>
-                <li><a href="../pg-ini/PgIni.html#Contacto" class="link">Contactos</a></li>
+                <li><a href="../pg-ini/PgIni.html" class="link">Inicio</a></li>
+                <li><a href="../pg-ini/PgIni.html#nosotros" class="link">Nosotros</a></li>
+                <li><a href="../pg-ini/PgIni.html#contacto" class="link">Contactos</a></li>
                 <li><a href="../pg-Nav/aniCata.html" class="link">Adopta!</a></li>
                 <li><a href="../pg-RegForm/regForm.html" class="link">Registro</a></li>
             </ul>
         </div>
     </div>
-    <div class="div-banner">
-        <div class="imagen">
-            <div class="logo-banner">
-                <p class="adopta">Adopta!</p>
+    <!-- Banner -->
+    <div class="banner">
+        <div class="banner-titulo">
+            <h1>Da una oportunidad</h1>
+        </div>
+        <div class="banner-texto">
+            <h2>Rescatamos, recuperamos y damos en<br>adopción a muchas mascotas.<br></h2>
+            <h3><br>Haz a uno de ellos parte de tu vida!<br><br></h3>
+        </div>
+        <div class="botonAdop">
+            <div class="boton">
+                <a href="../pg-Nav/aniCata.html">Adopta!</a>
             </div>
-        </div> 
-
-        <h1>Bienvenid@s a ResQAnimalia</h1>
-        <h2>Rescatamos, recuperamos y adamos en adopcion ayudando a todos los animales.</h2>
-        <a href="https://www.google.com" target="_blank"> Incribite</a>
-    </div>  
-   
-   <section>
-    ---------------------
+        </div>
+    </div>
+    <!-- Video -->
+    <section class="video">
+        <div class="contenedor">
+            <div id="player"></div>
+        </div>
+    </section>
+    <!-- Nosotros -->
+    <section id="nosotros">
+       
+    </section>
+    <!-- Contacto -->
+    <section id="contacto">
+        <div class="contenedor">
+            <div class="form-contacto">
+                <h2>Envianos tu consulta</h2>
+                <form action="https://formsubmit.co/559c8b76047b274d783e85937490bc7c" method="post" class="formulario">
+                    <input type="hidden" name="_next" value="http://192.168.0.5:5500/pg-ini/PgIni.html#Contacto">
+                    <input type="hidden" name="_captcha" value="false">
+                    <div>
+                        <label for="Nombre">Nombre</label>
+                        <input type="text" name="name" placeholder="Ingrese su nombre" maxlength="40" required>
+                    </div>
+                    <div>
+                        <label for="email">Correo Eléctronico</label>
+                        <input type="email" name="email" placeholder="Ingrese su correo" maxlength="40" required>
+                    </div>
+                    <div>
+                        <label for="subject">Asunto</label>
+                        <input type="text" name="subject" placeholder="Ingrese una breve descripción de su mensaje" maxlength="50" required>
+                    </div>
+                    <div>
+                        <label for="consulta">Consulta</label>
+                        <textarea name="consulta" cols="50" rows="5" placeholder="Ingrese su mensaje aquí" maxlength="500"></textarea>
+                    </div>
+                    <div class="btnForm">
+                        <input type="submit" value="Enviar" class="btn">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Auspician -->
+       
+   <!-- <section>
     <h3>Adopciones Actuales</h3>
     <div class="contenedor-Adopta">
     <img src="" alt=" xxxx" title="">
     <p>Si deseas informarnos de animales que requieren ser adoptados Dale clic al boton Logueate e indicanos todos los datos.</p>
     <a>Logearme</a>
     </div>
-
-
-
    </section>
    <section>    
     <div>
@@ -59,7 +102,6 @@
         <p>Somos una organización sin fines de lucro liderada por un grupo de voluntarios que buscamos superar la situación de sobrepoblación, abandono, crueldad e indiferencia que viven millones de animales en nuestro país.</p>
         <a>Colaboradores Ir</a>
     </div>
-    
    </section>
    <section>    
     <div>
@@ -73,12 +115,8 @@
 
     </div>
     
-   </section>
-    
-    
-    
-    
-    
+   </section> -->
+   <div class="relleno"></div>
    <footer>
     <div>
         <p>&copy; 2023 <b>ResQAnimalia</b>. Todos los derecho resevados.</p>
@@ -98,5 +136,6 @@
         </a>
     </div>
 </footer>
+<script src="./player.js"></script>
 </body>
 </html>
