@@ -2,10 +2,11 @@
     "animales":[
         {
             "id":1,
-            "nombre":"Leon!!",
+            "nombre":"leon",
             "imagen":
                 ["../images/gato00_00.jpg","../images/gato00_01.jpg","../images/gato00_02.jpg"],
             "edad": "4 años",
+            "genero": "Hembra",
             "localidad": "Moron",
             "raza": "Colorado",
             "especie": "Gato",

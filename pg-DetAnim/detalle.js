@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     document.getElementById('nombreAnimal').textContent ='Nombre: ' + animal.nombre;
                     document.getElementById('imagenAnimal-00').src = animal.imagen[0];
                     document.getElementById('edadAnimal').textContent = 'Edad: ' + animal.edad;
+                    document.getElementById('generoAnimal').textContent = 'Genero: ' + animal.genero;
                     document.getElementById('localidadAnimal').textContent = 'Localidad: ' + animal.localidad;
                     document.getElementById('razaAnimal').textContent = 'Raza: ' + animal.raza;
                     document.getElementById('especieAnimal').textContent = 'Especie: ' + animal.especie;
