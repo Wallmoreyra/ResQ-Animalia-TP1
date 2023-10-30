@@ -18,59 +18,93 @@ body{
     scroll-behavior: smooth;
 }
 
-.contenedor-nav {
-    background-color: #203855;
-    color: #fff;
-}
-
-.menu {
+/* --------------------------------------------------------------
+# NavBar
+--------------------------------------------------------------*/
+.navbar-container {
+    width: 100%;
+    background-color: #1e699b;
     font-weight: bold;
     justify-content: space-between;
     display: flex;
-    align-items: center;
-}
-
-.logo {
-    margin-left: 50px;
-}
-
-.logo a {
-    margin: 15px;
-    align-items: center;
-    display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
-.lista {
+.navbar-container div {
+    width: 50%;
+}
+
+.navbar-container .logo {
+    width: 100%;
+    justify-content: flex-start;
+    display: flex;
+    padding: 10px;
+    padding-left: 15%;
+}
+
+.navbar-container .navbar ul {
+    width: 100%;
     display: flex;
     justify-content: flex-end;
     list-style: none;
-    margin-right: 100px;
+    padding-right: 30%;
 }
 
-.lista li {
+.navbar-container .navbar li {
     margin-right: 0.5rem;
     margin-left: 25px;
 }
 
-.link {
+.navbar-container .navbar li a {
     text-decoration: none;
     color: #fff;
+    position: relative;
+    transition: all ease-in-out 250ms;
 }
 
+.navbar-container .navbar li a::after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 0.4em;
+    width: 0%;
+    background-color:#ffa600;
+    bottom: -0.5em;
+    transition: all ease-in-out 250ms;
+}
+
+.navbar-container .navbar li a:hover::after {
+    width: 100%;
+}
+
+.navbar-container .navbar li a:hover {
+    color: #ffa600;
+}
+
+.partnerInf {
+    width: 100%;
+    height: 3vh;
+    background: linear-gradient(#f3f3f3, #1A1A1A);   
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
 footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: #000;
+    background-color: #1A1A1A;
     text-align: center;
     color: #fff;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 4vh;
+    position: fixed;
 }
 
 footer div {
@@ -107,17 +141,4 @@ footer div b {
 
 .fa-whatsapp:hover {
     color: #25d366;
-}
-
-@media (max-width: 768px) {
-    .inicio {
-        display: flex;
-        flex-direction: column;
-    }
-    .izquierda {
-        width: 100%;
-    }
-    .derecha {
-        width: 100%;
-    }
 }
