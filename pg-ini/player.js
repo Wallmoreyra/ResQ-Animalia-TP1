@@ -7,8 +7,8 @@ var tag = document.createElement('script');
     var player;
     function onYouTubeIframeAPIReady() {
       player = new YT.Player('player', {
-        height: '360',
-        width: '640',
+        height: '405',
+        width: '720',
         videoId: 'V0kvqSUbta4',
         events: {
           'onReady': onPlayerReady,
@@ -24,7 +24,7 @@ var tag = document.createElement('script');
     var done = false;
     function onPlayerStateChange(event) {
       if (event.data == YT.PlayerState.PLAYING && !done) {
-        setTimeout(stopVideo, 1);
+        setTimeout(stopVideo, 0);
         done = true;
       }
     }

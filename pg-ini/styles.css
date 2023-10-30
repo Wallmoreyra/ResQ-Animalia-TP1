@@ -3,6 +3,10 @@
     src: url('../fonts/Papyrus.ttf') format('truetype');
 }
 
+/* Responsivo 1440	1024 768 */
+/*--------------------------------------------------------------
+# Recursos Globales
+--------------------------------------------------------------*/
 * {
     margin: 0px;
     padding: 0px;
@@ -12,10 +16,40 @@
 
 body {
     scroll-behavior: smooth;
-    background: #f5f5f5;
 }
 
-/*--------------------------------------------------------------
+.bordeS1 {
+    width: 100%;
+    height: 3vh;
+    background: linear-gradient(#212529, #f3f3f3);
+}
+
+.bordeI1 {
+    width: 100%;
+    height: 3vh;
+    background: linear-gradient(#f3f3f3, #212529);
+}
+
+.partnerSup {
+    width: 100%;
+    height: 3vh;
+    background: linear-gradient(#212529, #f3f3f3);
+}
+
+.partnerInf {
+    width: 100%;
+    height: 3vh;
+    background: linear-gradient(#f3f3f3, #1A1A1A);
+    
+}
+
+.bordeDegOC {
+    width: 100%;
+    height: 3vh;
+    background: linear-gradient(#1A1A1A, #f3f3f3);
+}
+
+/* --------------------------------------------------------------
 # NavBar
 --------------------------------------------------------------*/
 .navbar-container {
@@ -26,44 +60,41 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    position: fixed;
 }
 
 .navbar-container div {
     width: 50%;
 }
 
-.logo {
+.navbar-container .logo {
     width: 100%;
-    /* background-color: #00acee; */
     justify-content: flex-start;
     display: flex;
     padding: 10px;
     padding-left: 15%;
 }
 
-.navbar ul {
+.navbar-container .navbar ul {
     width: 100%;
-    /* background-color: #c13584; */
     display: flex;
     justify-content: flex-end;
     list-style: none;
     padding-right: 30%;
 }
 
-.navbar li {
+.navbar-container .navbar li {
     margin-right: 0.5rem;
     margin-left: 25px;
 }
 
-.navbar li a {
+.navbar-container .navbar li a {
     text-decoration: none;
     color: #fff;
     position: relative;
     transition: all ease-in-out 250ms;
 }
 
-.navbar li a::after {
+.navbar-container .navbar li a::after {
     content: '';
     position: absolute;
     display: block;
@@ -74,11 +105,11 @@ body {
     transition: all ease-in-out 250ms;
 }
 
-.navbar li a:hover::after {
+.navbar-container .navbar li a:hover::after {
     width: 100%;
 }
 
-.navbar li a:hover {
+.navbar-container .navbar li a:hover {
     color: #ffa600;
 }
 
@@ -87,8 +118,7 @@ body {
 --------------------------------------------------------------*/
 .banner {
     width: 100%;
-    min-height: 300px;
-    background-image:linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.5)), url(../images/banner.jpg);
+    background-image:linear-gradient(rgba(0,0,0,0), #212529), url(../images/banner.jpg);
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
@@ -104,6 +134,7 @@ body {
     text-align: right;
     justify-content: center;
     padding-right: 5%;
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
 }
 
 .banner .banner-texto {
@@ -182,37 +213,134 @@ body {
     transform: translateY(0);
 }
 
+ /*--------------------------------------------------------------
+# Nosotros
+--------------------------------------------------------------*/
+#nosotros .contenedor {
+    background-image: linear-gradient(rgba(0,0,0,0), #212529), url(../images/nos.jpg);
+    background-position: center;
+    border: 10px solid #212529;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 3vh;
+}
+
+#nosotros .contenedor h1 {
+    color: #fff;
+    font-size: 10vh;
+    font-family: "Pacifico";
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+
+#nosotros .contenedor p {
+    color: #fff;
+    font-family: "Roboto Slab";
+    font-size: 3vh;
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+    text-align: right;
+}
+
+/*--------------------------------------------------------------
+# Objetivos
+--------------------------------------------------------------*/
+#objetivos {
+    background-color: #f3f3f3;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 10vh 0vh 10vh 0vh;
+}
+
+#objetivos .contenedor .obj {
+    width: 95%;
+    border-radius: 1rem;
+    background-image:linear-gradient(rgba(0,0,0,0), #212529), url(../images/obj.jpg);
+    /* background: #212529; */
+    background-position: center;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    /* border-radius: 1rem; */
+    padding: 1vh 0.5vh 1vh 0.5vh;
+    box-shadow: 10px 20px 20px #000000;
+}
+
+#objetivos .contenedor .obj .items {
+    background: #444444c7;
+    width: 95%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5vh;
+    border-radius: 1rem;
+    box-shadow: 10px 20px 10px #ffffff0a;
+    /* transform: skewY(5deg); */
+}
+
+#objetivos .contenedor .obj .items p {
+    color: #fff;
+    font-family: "Raleway";
+    font-weight: normal;
+    text-align: center;
+    font-size: 25px;
+}
+
 /*--------------------------------------------------------------
 # Video
 --------------------------------------------------------------*/
 .video {
     display: flex;
     flex-direction: column;
-    background-color: #212529;
-    min-height: 60vh;
+    background-color: #f3f3f3;
     align-items: center;
     justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+.video .contenedor {
+    display: flex;
+    width: 100%;
+    min-height: 45vh;
+    background-color: #f3f3f3;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.video #player {
+    box-shadow: 10px 20px 20px black;
 }
 
 /*--------------------------------------------------------------
 # FormContacto
 --------------------------------------------------------------*/
-#contacto {
+#contacto .contenedor {
+    background-color: #212529;
     display: flex;
     flex-direction: column;
-    /* background: url(../images/backwave.svg) no-repeat,#fff;
-    background-position-y: top; */
     align-items: center;
+    justify-content: center;
+    margin: auto;
     padding: 3rem;
-    color: #000;
-    background-color: #212529;
-    transform: skewY(175deg);
+    display: flex;
+    flex-direction: column;
+    color: #fff;
 }
 
 #contacto .contenedor .form-contacto {
     display: flex;
     flex-direction: column;
-    transform: skewY(5deg);
 }
 
 #contacto .contenedor .form-contacto div {
@@ -222,7 +350,7 @@ body {
 }
 
 #contacto .contenedor .form-contacto label {
-    color: #000;
+    color: #fff;
     font-size: large;
     font-weight: bold;  
 }
@@ -249,12 +377,52 @@ body {
     background-color: #2954a5;
     box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
     transform: translateY(-2px);
-   }
-
-.relleno {
-    background-color: #212529;
-    height: 10vh;
 }
+
+/*--------------------------------------------------------------
+# Colaboradores
+--------------------------------------------------------------*/
+.partner {
+    height: 30vh;
+    background-color: #f3f3f3;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.partner .contenedor {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.partner .partnerTitulo {
+    font-size: 1.5em;
+}
+
+.partner .contenedor div {
+    background: #ffffff00;
+    color: #fff;
+    flex: none;
+    width: calc((100% - 16%) / 5);
+    align-items: center;
+    justify-content: center;
+}
+
+.partner .contenedor a {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.partner .contenedor img {
+    height: 100px;
+}
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -264,7 +432,7 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: #000;
+    background-color: #1A1A1A;
     text-align: center;
     color: #fff;
     bottom: 0;
