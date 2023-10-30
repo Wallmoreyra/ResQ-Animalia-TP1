@@ -7,80 +7,139 @@
     <title>ResQAnimalia</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Anton&family=Pacifico&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Anton&family=Pacifico&family=Roboto+Slab&family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="icon" href="./images/l_blk.png">
 </head>
 <body>
-    <div class="contenedor-nav">
-        <div class="menu">
-            <div class="logo">
-                <a href="../index.html" class="navbar-logo">
-                    <img src="../images/l_bco_comp.png" alt="ResQAnimalia" width="200" height="100">
-                </a>
-            </div>
-                <nav>
-                    <ul class="lista">
-                        <li class="primer_elemento"><a href="../pg-ini/PgIni.html" class="link">Inicio</a></li>
-                        <li><a href="../pg-ini/PgIni.html#Nosotros" class="link">Nosotros</a></li>
-                        <li><a href="../pg-ini/PgIni.html#Contacto" class="link">Contactos</a></li>
-                        <li><a href="../pg-Nav/aniCata.html" class="link">Adopta!</a></li>
-                        <li><a href="../pg-RegForm/regForm.html" class="link">Registro</a></li>
-                    </ul>
-                </nav>
+    <!-- Barra Navegacion -->
+    <div class="navbar-container">
+        <div class="logo">
+            <a href="../index.html" class="navbar-logo">
+                <img src="../images/l_bco_comp.png" alt="ResQAnimalia" width="150" height="75">
+            </a>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="../pg-ini/PgIni.html" class="link">Inicio</a></li>
+                <li><a href="../pg-ini/PgIni.html#nosotros" class="link">Nosotros</a></li>
+                <li><a href="../pg-ini/PgIni.html#contacto" class="link">Contacto</a></li>
+                <li><a href="../pg-Nav/aniCata.html" class="link">Adopta!</a></li>
+                <li><a href="../pg-RegForm/regForm.html" class="link">Registro</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Banner -->
+    <div class="banner">
+        <div class="banner-titulo">
+            <h1><br><br><br>Dales una oportunidad</h1>
+        </div>
+        <div class="banner-texto">
+            <h2>Rescatamos, recuperamos y damos en<br>adopción a muchas mascotas.</h2>
+            <h3><br> Haz a una de ellas parte de tu vida!<br><br></h3>
+        </div>
+        <div class="botonAdop">
+            <div class="boton">
+                <a href="../pg-Nav/aniCata.html">Adopta!</a>
             </div>
         </div>
     </div>
-    <div class="div-banner">
-        <div class="imagen">
-            <!-- <p>Bienvenida</p> -->
-        </div> 
-
-        <h1>Bienvenid@s a ResQAnimalia</h1>
-        <h2>Rescatamos, recuperamos y adamos en adopcion ayudando a todos los animales.</h2>
-        <a href="https://www.google.com" target="_blank"> Incribite</a>
-    </div>  
-   
-   <section>
-    ---------------------
-    <h3>Adopciones Actuales</h3>
-    <div class="contenedor-Adopta">
-    <img src="" alt=" xxxx" title="">
-    <p>Si deseas informarnos de animales que requieren ser adoptados Dale clic al boton Logueate e indicanos todos los datos.</p>
-    <a>Logearme</a>
+    <div class="bordeS1"></div>
+    <!-- Video -->
+    <section class="video">
+        <div class="contenedor">
+            <div id="player"></div>
+        </div>
+    </section>
+    <div class="bordeI1"></div>
+    <!-- Nosotros -->
+    <section id="nosotros">
+       <div class="contenedor">
+        <div class="tituloNosotros">
+            <h1>¿Quienes somos?</h1>
+        </div>
+        <div class="textoNosotros">
+            <p><br>Somos una organización sin fines de lucro liderada por un grupo de<br>voluntarios que buscamos superar la situación de sobrepoblación,<br>abandono, crueldad e indiferencia que viven millones<br>de animales en nuestro país.</p>
+        </div>
+       </div>
+       <div class="bordeDegOC"></div>
+    </section>
+    <!-- Objetivos -->
+    <section id="objetivos">
+        <!-- <h1 class="objTitulo">Nuestra Mision</h1> -->
+        <div class="contenedor">
+            <div class="obj">
+                <div class="items">
+                    <p>Creemos que todas las mascotas, ya sean jóvenes o adultas, sociables o tímidas, con buena o mala salud. merecen una buena vida. Cada mascota que llega a nuestras manos recibe todo el apoyo, el amor y las atenciones médicas, que necesitan para poder seguir adelante.</p>
+                </div>
+                <div class="items">
+                    <p>Pormovemos la tenencias responsable de mascotas, concientizamos al público sobre la importancia de esterilizar a nuestras mascotas, y los cuidados que necesitan.</p>
+                </div>
+                <div class="items">
+                    <p>Trabajarmos con organizaciones de bienestar animal y gente con ganas de cambiar las cosas, para ayudar a acabar con la falta hogar de estas mascotas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="bordeI1"></div>
+    <!-- Contacto -->
+    <section id="contacto">
+        <div class="contenedor">
+            <div class="form-contacto">
+                <h2>Envianos tu consulta</h2>
+                <form action="https://formsubmit.co/559c8b76047b274d783e85937490bc7c" method="post" class="formulario">
+                    <input type="hidden" name="_next" value="http://192.168.0.5:5500/pg-ini/PgIni.html#contacto">
+                    <input type="hidden" name="_captcha" value="false">
+                    <div>
+                        <label for="Nombre">Nombre</label>
+                        <input type="text" name="name" placeholder="Ingrese su nombre" maxlength="40" required>
+                    </div>
+                    <div>
+                        <label for="email">Correo Eléctronico</label>
+                        <input type="email" name="email" placeholder="Ingrese su correo" maxlength="40" required>
+                    </div>
+                    <div>
+                        <label for="subject">Asunto</label>
+                        <input type="text" name="subject" placeholder="Ingrese una breve descripción de su mensaje" maxlength="50" required>
+                    </div>
+                    <div>
+                        <label for="consulta">Consulta</label>
+                        <textarea name="consulta" cols="100" rows="5" placeholder="Ingrese su mensaje aquí" maxlength="500"></textarea>
+                    </div>
+                    <div class="btnForm">
+                        <input type="submit" value="Enviar" class="btn">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <div class="partnerSup"></div>
+    <!-- Colaboradores -->
+    <div class="partner">
+        <div class="partnerTitulo">
+            <h1>Colaboradores</h1>
+        </div>
+        <div class="contenedor">
+            <div class="logo">
+                <a href="https://petscenter.com.ar/" target="_blank"><img src="/images/partners/PetsCenter.PNG" alt="PetsCenter"></a>
+            </div>
+            <div class="logo">
+                <a href="https://www.pajaroscaidos.org.ar/" target="_blank"><img src="/images/partners/pajaroscaidos.png" alt="Pajaros Caidos"></a>
+            </div>
+            <div class="logo">
+                <a href="https://hamstersargentina.wixsite.com/inicio" target="_blank"><img src="/images/partners/HAO.png" alt="Hamster Argentina Oficial"></a>
+            </div>
+            <div class="logo">
+                <a href="https://www.elcampitorefugio.org/index.php" target="_blank"><img src="/images/partners/elcampito.png" alt="Refugio El Campito"></a>
+            </div>
+            <div class="logo">
+                <a href="https://gatitosdelasarmiento.blogspot.com/" target="_blank"><img src="/images/partners/gatitosdelsarmiento.jpg" alt="Gatitos del Sarmiento"></a>
+            </div>
+        </div>
     </div>
-
-
-
-   </section>
-   <section>    
-    <div>
-        <h3>Nosotros/Colaboradores</h3>
-        <img src="" alt=" xxxx" title="">
-        <p>Somos una organización sin fines de lucro liderada por un grupo de voluntarios que buscamos superar la situación de sobrepoblación, abandono, crueldad e indiferencia que viven millones de animales en nuestro país.</p>
-        <a>Colaboradores Ir</a>
-    </div>
-    
-   </section>
-   <section>    
-    <div>
-        <h3>Historias</h3>
-        <p>Nuestra misión es rescatar animales abandonados. Nuestro sueño es que un día no sea necesario hacerlo, mientras les compartimos las historias de nuestros rescatados.</p>
-        <img src="" alt=" xxxx" title="">
-        <img src="" alt=" xxxx" title="">
-        <img src="" alt=" xxxx" title="">
-        <img src="" alt=" xxxx" title="">
-
-
-    </div>
-    
-   </section>
-    
-    
-    
-    
-    
-   <footer>
+    <div class="partnerInf"></div>
+    <!-- Footer -->
+    <footer>
     <div>
         <p>&copy; 2023 <b>ResQAnimalia</b>. Todos los derecho resevados.</p>
     </div>
@@ -98,6 +157,7 @@
             <i class="fab fa-whatsapp"></i>
         </a>
     </div>
-</footer>
+    </footer>
+    <script src="./player.js"></script>
 </body>
 </html>
