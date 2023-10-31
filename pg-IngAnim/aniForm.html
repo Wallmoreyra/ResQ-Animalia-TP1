@@ -3,14 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
-    <title>página de registro de animales</title>
+    <link rel="stylesheet" type=text/css href="./styles.css">
+    <title>Registro de Animales</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Anton&family=Pacifico&family=Roboto+Slab&family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" href="./images/l_blk.png">
 </head>
 <body>
-    <h1>Pag de registro de animales</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam ullam quia sed laudantium officia labore dolor doloremque provident quam ipsum nobis qui ratione pariatur in fuga deleniti, tenetur inventore facere.</p>
+     <!-- Barra Navegacion -->
+     <div class="navbar-container">
+        <div class="logo">
+            <a href="../index.html" class="navbar-logo">
+                <img src="../images/l_bco_comp.png" alt="ResQAnimalia" width="150" height="75">
+            </a>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="../pg-ini/PgIni.html" class="link">Inicio</a></li>
+                <li><a href="../pg-ini/PgIni.html#nosotros" class="link">Nosotros</a></li>
+                <li><a href="../pg-ini/PgIni.html#contacto" class="link">Contacto</a></li>
+                <li><a href="../pg-Nav/aniCata.html" class="link">Adopta!</a></li>
+                <li><a href="../pg-RegForm/regForm.html" class="link">Registro</a></li>
+            </ul>
+        </div>
+    </div>
+    <div>
+        <h1>Registro de usuario</h1>
+
+        <form action="">
+
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name">
+
+            <label for="race">Raza</label>
+            <input type="text" id="race" name="race">
+
+            <label for="habitatSize">Tamaño de habitat:</label>
+            <select id="habitatSize" name="habitatSize">
+                <option value="chico">Chico</option>
+                <option value="mediano">Mediano</option>
+                <option value="grande">Grande</option>
+            </select>
+
+            <label for="img">Imagen</label>
+            <input type="text" id="img" name="img">
+
+            <label for="age">Edad</label>
+            <input type="number" id="age" name="age">
+
+            <label for="Locate">Localidad</label>
+            <input type="text" id="Locate" name="Locate">
+
+            <label for="specialCares">Cuidados especiales</label>
+            <textarea id="specialCares" name="specialCares" rows="5"></textarea>
+
+            <label for="description">Descripción</label>
+            <textarea id="description" name="description" rows="5"></textarea>
+
+            <input type="reset" value="Borrar">
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    <div class="partnerInf"></div>
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2023 ResQAnimalia. Todos los derechos reservados.</p>
-    </footer>
-</body>
+        <div>
+            <p>&copy; 2023 <b>ResQAnimalia</b>. Todos los derecho resevados.</p>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.instagram.com" class="social-icon" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com" class="social-icon" target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.twitter.com" class="social-icon" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://wa.me/1234567890" class="social-icon" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+        </footer>
+    </body>
 </html>

@@ -1,24 +1,30 @@
 @font-face {
-    font-family: "Papy";
+    font-family: "Papyrus";
     src: url('./fonts/Papyrus.ttf') format('truetype');
 }
 
-*{
+/*--------------------------------------------------------------
+# Recursos Globales
+--------------------------------------------------------------*/
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-.inicio {
+/*--------------------------------------------------------------
+# Splash - Contenido
+--------------------------------------------------------------*/
+#inicio {
     display: flex;
     flex-direction: row;
 }
 
-.izquierda {
+#inicio .izquierda {
     width: 50%;
-    min-height: 95vh;
-    background-image:linear-gradient(rgba(0,0,0,0.60), rgba(0,0,0,0.10)), url(./images/fondo.jpg);
+    min-height: 96vh;
+    background-image:linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.10)), url(./images/fondo.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -28,10 +34,10 @@
     text-align: center;
 }
 
-.derecha {
+#inicio .derecha {
     width: 50%;
-    min-height: 95vh;
-    background-color: #202020;
+    min-height: 96vh;
+    background-image: radial-gradient(rgba(0,0,0,1), rgba(0,0,0,0.1)), url(./images/index-texture.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -41,19 +47,19 @@
     text-align: center;
 }
 
-.main-section {
+#inicio .main-section {
     width: 50%;
     line-height: 1;
 }
 
-.izquierda .content h1 {
+#inicio .izquierda .content h1 {
     font-family: 'Roboto Slab', serif;
     font-size: 70px;
     font-weight: 800;
     color: #ffc976;
 }
 
-.izquierda .content p {
+#inicio .izquierda .content p {
     font-weight: bold;
     font-size: 25px;
     margin: 25px;
@@ -61,7 +67,7 @@
     color: #fff;
 }
 
-.derecha .content p {
+#inicio .derecha .content p {
     font-weight: bold;
     font-size: 25px;
     margin: 25px;
@@ -69,11 +75,14 @@
     color: #fff;
 }
 
-.logo {
+#inicio .derecha .logo {
     width: 70%;
 }
 
-.content .button a {
+/*--------------------------------------------------------------
+# Splash / Boton
+--------------------------------------------------------------*/
+#inicio .content .button a {
     appearance: none;
     background-color: #2954a571;
     border: 2px solid #1A1A1A;
@@ -92,32 +101,99 @@
     padding: 16px 24px;
     text-align: center;
     text-decoration: none;
-    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    transition: all 500ms cubic-bezier(.23, 1, 0.32, 1);
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
     will-change: transform;
 }
   
-.content .button a:disabled {
+#inicio .content .button a:disabled {
     pointer-events: none;
 }
   
-.content .button a:hover {
+#inicio .content .button a:hover {
+    background-color: #2954a5;
     box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
     transform: translateY(-2px);
 }
   
-.content .button a:active {
+#inicio .content .button a:active {
     box-shadow: none;
     transform: translateY(0);
 }
 
-footer {
-    font-weight: bold;
-    background-color: #000;
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #1A1A1A;
     text-align: center;
-    line-height: 5vh;
     color: #fff;
-    height: 5vh;    
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4vh;
+}
+
+#footer div {
+    margin-left: 2rem;
+}
+
+#footer .textoFooter b {
+    font-family: "Papyrus", sans-serif;
+}
+
+#footer .social-icon {
+    border-radius: 5px;
+    font-size: 24px;
+    margin: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+#footer .fab:hover {
+    transform: scale(1.3);
+}
+
+#footer .fa-instagram:hover {
+    color: #c13584;
+}
+
+#footer .fa-facebook:hover {
+    color: #3b5998;
+}
+
+#footer .fa-twitter:hover {
+    color: #00acee;
+}
+
+#footer .fa-whatsapp:hover {
+    color: #25d366;
+}
+
+@media (max-width: 768px) {
+    #inicio {
+        display: flex;
+        flex-direction: column;
+    }
+    #inicio .izquierda {
+        width: 100%;
+    }
+    .derecha {
+        width: 100%;
+    }
+    footer {
+        height: auto;
+        /* position: static;
+        bottom: auto;
+        left: auto;
+        margin-top: 5vh;
+        padding-top: 3vh; */
+    }
 }

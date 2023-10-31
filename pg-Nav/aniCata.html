@@ -3,14 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
-    <title>página listado de animales</title>
+    <link rel="stylesheet" type=text/css href="./styles.css">
+    <title>Galeria</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Anton&family=Pacifico&family=Roboto+Slab&family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" href="./images/l_blk.png">
 </head>
 <body>
-    <h1>Pag listado de animales</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam ullam quia sed laudantium officia labore dolor doloremque provident quam ipsum nobis qui ratione pariatur in fuga deleniti, tenetur inventore facere.</p>
+     <!-- Barra Navegacion -->
+     <div class="navbar-container">
+        <div class="logo">
+            <a href="../index.html" class="navbar-logo">
+                <img src="../images/l_bco_comp.png" alt="ResQAnimalia" width="150" height="75">
+            </a>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="../pg-ini/PgIni.html" class="link">Inicio</a></li>
+                <li><a href="../pg-ini/PgIni.html#nosotros" class="link">Nosotros</a></li>
+                <li><a href="../pg-ini/PgIni.html#contacto" class="link">Contacto</a></li>
+                <li><a href="../pg-Nav/aniCata.html" class="link">Adopta!</a></li>
+                <li><a href="../pg-RegForm/regForm.html" class="link">Registro</a></li>
+            </ul>
+        </div>
+    </div>
+    <h1>Animales en adopción</h1>
+    <p>
+        Cada día, miles de animales inocentes esperan en refugios, ansiosos por encontrar un hogar cálido y amoroso. Al adoptar uno de estos animales, puedes hacer una diferencia real en sus vidas y en la tuya.
+        </br>
+        Estos animales se encuentran necesitados de un hogar:
+    </p>
+    <div id="botonesPagNav01">
+        <button  class="botonActualizar">Actualizar</button>
+        <button  class="mostrarGatos">Gatos</button>
+        <button  class="mostrarPerros">Perros</button>
+        <button  class="mostrarOtros">Otros</button>
+    </div>
+    <div id="botonCerrar">
+        <button  class="mostrarOtros" onclick="cerrar()">Cerrar</button>
+    </div>
+
+    <div class="contenedor" id="cardConteiner">
+        <!-- <div class="card">
+            <h3>Nombre0</h3>
+            <a href="../pg-DetAnim/aniDet.html">
+                <img src="" alt="imgAni00">
+            </a>
+            <div class="racAge">
+                <p>Raza</p>
+                <p>Edad</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Nombre1</h3>
+            <a href="">
+                <img src="" alt="imgAni01">
+            </a>
+            <div class="racAge">
+                <p>Raza</p>
+                <p>Edad</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Nombre2</h3>
+            <a href="">
+                <img src="" alt="imgAni02">
+            </a>
+            <div class="racAge">
+                <p>Raza</p>
+                <p>Edad</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Nombre3</h3>
+            <a href="">
+                <img src="" alt="imgAni03">
+            </a>
+            <div class="racAge">
+                <p>Raza</p>
+                <p>Edad</p>
+            </div>
+        </div> -->
+    </div>
+    <div id="botonesPagNav">
+        <button class="pagina-anterior">Anterior</button><button class="pagina-siguiente">Siguiente</button>
+    </div>
+    <iframe class="iframeDetalle" id="iframeContenedor" width="100%" height="800" src="" frameborder="0"></iframe>
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2023 ResQAnimalia. Todos los derechos reservados.</p>
+        <div>
+            <p>&copy; 2023 <b>ResQAnimalia</b>. Todos los derecho resevados.</p>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.instagram.com" class="social-icon" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com" class="social-icon" target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.twitter.com" class="social-icon" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://wa.me/1234567890" class="social-icon" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
     </footer>
+    <script src="./listaDeAnimales.js"></script>
 </body>
 </html>

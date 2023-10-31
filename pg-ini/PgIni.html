@@ -3,14 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
-    <title>página listado de animales</title>
+    <link rel="stylesheet" type=text/css href="./styles.css">
+    <title>ResQAnimalia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Anton&family=Pacifico&family=Roboto+Slab&family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" href="./images/l_blk.png">
 </head>
 <body>
-    <h1>Pag listado de animales</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam ullam quia sed laudantium officia labore dolor doloremque provident quam ipsum nobis qui ratione pariatur in fuga deleniti, tenetur inventore facere.</p>
+    <!-- Barra Navegacion -->
+    <div class="navbar-container">
+        <div class="logo">
+            <a href="../index.html" class="navbar-logo">
+                <img src="../images/l_bco_comp.png" alt="ResQAnimalia" width="150" height="75">
+            </a>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="../pg-ini/PgIni.html" class="link">Inicio</a></li>
+                <li><a href="../pg-ini/PgIni.html#nosotros" class="link">Nosotros</a></li>
+                <li><a href="../pg-ini/PgIni.html#contacto" class="link">Contacto</a></li>
+                <li><a href="../pg-Nav/aniCata.html" class="link">Adopta!</a></li>
+                <li><a href="../pg-RegForm/regForm.html" class="link">Registro</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Banner -->
+    <div class="banner">
+        <div class="banner-titulo">
+            <h1><br><br><br>Dales una oportunidad</h1>
+        </div>
+        <div class="banner-texto">
+            <h2>Rescatamos, recuperamos y damos en<br>adopción a muchas mascotas.</h2>
+            <h3><br> Haz a una de ellas parte de tu vida!<br><br></h3>
+        </div>
+        <div class="botonAdop">
+            <div class="boton">
+                <a href="../pg-Nav/aniCata.html">Adopta!</a>
+            </div>
+        </div>
+    </div>
+    <div class="bordeS1"></div>
+    <!-- Video -->
+    <section class="video">
+        <div class="contenedor">
+            <div id="player"></div>
+        </div>
+    </section>
+    <div class="bordeI1"></div>
+    <!-- Nosotros -->
+    <section id="nosotros">
+       <div class="contenedor">
+        <div class="tituloNosotros">
+            <h1>¿Quienes somos?</h1>
+        </div>
+        <div class="textoNosotros">
+            <p><br>Somos una organización sin fines de lucro liderada por un grupo de<br>voluntarios que buscamos superar la situación de sobrepoblación,<br>abandono, crueldad e indiferencia que viven millones<br>de animales en nuestro país.</p>
+        </div>
+       </div>
+       <div class="bordeDegOC"></div>
+    </section>
+    <!-- Objetivos -->
+    <section id="objetivos">
+        <!-- <h1 class="objTitulo">Nuestra Mision</h1> -->
+        <div class="contenedor">
+            <div class="obj">
+                <div class="items">
+                    <p>Creemos que todas las mascotas, ya sean jóvenes o adultas, sociables o tímidas, con buena o mala salud, merecen una buena vida. Cada mascota que llega a nuestras manos recibe todo el apoyo, el amor y las atenciones médicas, que necesitan para poder seguir adelante.</p>
+                </div>
+                <div class="items">
+                    <p>Promovemos la tenencia responsable de mascotas, concientizamos al público sobre la importancia de esterilizar a nuestras mascotas, y los cuidados que necesitan.</p>
+                </div>
+                <div class="items">
+                    <p>Trabajamos con organizaciones de bienestar animal y gente con ganas ayudar, para acabar con la falta hogar de estas mascotas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="bordeI1"></div>
+    <!-- Contacto -->
+    <section id="contacto">
+        <div class="contenedor">
+            <div class="form-contacto">
+                <h2>Envianos tu consulta</h2>
+                <form action="https://formsubmit.co/559c8b76047b274d783e85937490bc7c" method="post" class="formulario">
+                    <input type="hidden" name="_next" value="https://creative-starship-35247d.netlify.app/pg-ini/PgIni.html#contacto">
+                    <input type="hidden" name="_captcha" value="false">
+                    <div>
+                        <label for="Nombre">Nombre</label>
+                        <input type="text" name="name" placeholder="Ingrese su nombre" maxlength="40" required>
+                    </div>
+                    <div>
+                        <label for="email">Correo Eléctronico</label>
+                        <input type="email" name="email" placeholder="Ingrese su correo" maxlength="40" required>
+                    </div>
+                    <div>
+                        <label for="subject">Asunto</label>
+                        <input type="text" name="subject" placeholder="Ingrese una breve descripción de su mensaje" maxlength="50" required>
+                    </div>
+                    <div>
+                        <label for="consulta">Consulta</label>
+                        <textarea name="consulta" cols="100" rows="5" placeholder="Ingrese su mensaje aquí" maxlength="500"></textarea>
+                    </div>
+                    <div class="btnForm">
+                        <input type="submit" value="Enviar" class="btn">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <div class="partnerSup"></div>
+    <!-- Colaboradores -->
+    <div class="partner">
+        <div class="partnerTitulo">
+            <h1>Colaboradores</h1>
+        </div>
+        <div class="contenedor">
+            <div class="logo">
+                <a href="https://petscenter.com.ar/" target="_blank"><img src="/images/partners/PetsCenter.PNG" alt="PetsCenter"></a>
+            </div>
+            <div class="logo">
+                <a href="https://www.pajaroscaidos.org.ar/" target="_blank"><img src="/images/partners/pajaroscaidos.png" alt="Pajaros Caidos"></a>
+            </div>
+            <div class="logo">
+                <a href="https://hamstersargentina.wixsite.com/inicio" target="_blank"><img src="/images/partners/HAO.png" alt="Hamster Argentina Oficial"></a>
+            </div>
+            <div class="logo">
+                <a href="https://www.elcampitorefugio.org/index.php" target="_blank"><img src="/images/partners/elcampito.png" alt="Refugio El Campito"></a>
+            </div>
+            <div class="logo">
+                <a href="https://gatitosdelasarmiento.blogspot.com/" target="_blank"><img src="/images/partners/gatitosdelsarmiento.jpg" alt="Gatitos del Sarmiento"></a>
+            </div>
+        </div>
+    </div>
+    <div class="partnerInf"></div>
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2023 ResQAnimalia. Todos los derechos reservados.</p>
+    <div>
+        <p>&copy; 2023 <b>ResQAnimalia</b>. Todos los derecho resevados.</p>
+    </div>
+    <div class="social-icons">
+        <a href="https://www.instagram.com" class="social-icon" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com" class="social-icon" target="_blank">
+            <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://www.twitter.com" class="social-icon" target="_blank">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://wa.me/1234567890" class="social-icon" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
     </footer>
+    <script src="./player.js"></script>
 </body>
 </html>

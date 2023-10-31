@@ -1,15 +1,503 @@
-body{
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
-    background-color: #f1f1f1;
+@font-face {
+    font-family: "Papyrus";
+    src: url('../fonts/Papyrus.ttf') format('truetype');
 }
 
-footer {
+/* Responsivo 1440	1024 768 */
+/*--------------------------------------------------------------
+# Recursos Globales
+--------------------------------------------------------------*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+.bordeS1 {
+    width: 100%;
+    height: 3vh;
+    background: linear-gradient(#212529, #f3f3f3);
+}
+
+.bordeI1 {
+    width: 100%;
+    height: 3vh;
+    background: linear-gradient(#f3f3f3, #212529);
+}
+
+.partnerSup {
+    width: 100%;
+    height: 3vh;
+    background: linear-gradient(#212529, #f3f3f3);
+}
+
+.partnerInf {
+    width: 100%;
+    height: 3vh;
+    background: linear-gradient(#f3f3f3, #1A1A1A);
+}
+
+.bordeDegOC {
+    width: 100%;
+    height: 3vh;
+    background: linear-gradient(#1A1A1A, #f3f3f3);
+}
+
+/* --------------------------------------------------------------
+# NavBar
+--------------------------------------------------------------*/
+.navbar-container {
+    width: 100%;
+    background-color: #1e699b;
     font-weight: bold;
-    background-color: #000;
-    text-align: center;
-    line-height: 5vh;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar-container div {
+    width: 50%;
+}
+
+.navbar-container .logo {
+    width: 100%;
+    justify-content: flex-start;
+    display: flex;
+    padding: 10px;
+    padding-left: 15%;
+}
+
+.navbar-container .navbar ul {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    padding-right: 30%;
+}
+
+.navbar-container .navbar li {
+    margin-right: 0.5rem;
+    margin-left: 25px;
+}
+
+.navbar-container .navbar li a {
+    text-decoration: none;
     color: #fff;
-    height: 5vh;    
+    position: relative;
+    transition: all ease-in-out 250ms;
+}
+
+.navbar-container .navbar li a::after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 0.4em;
+    width: 0%;
+    background-color:#ffa600;
+    bottom: -0.5em;
+    transition: all ease-in-out 250ms;
+}
+
+.navbar-container .navbar li a:hover::after {
+    width: 100%;
+}
+
+.navbar-container .navbar li a:hover {
+    color: #ffa600;
+}
+
+/*--------------------------------------------------------------
+# Banner / Fondo y textos
+--------------------------------------------------------------*/
+.banner {
+    width: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0), #212529), url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.banner .banner-titulo {
+    width: 100%;
+    text-align: right;
+    justify-content: center;
+    padding-right: 5%;
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+
+.banner .banner-texto {
+    width: 100%;
+    text-align: right;
+    justify-content: center;
+    padding-right: 5%;
+}
+
+.banner .banner-titulo h1 {
+    color: #ffa600;
+    font-size: 4em;
+    font-family: "Roboto Slab", sans-serif;
+    padding-bottom: 5vh;
+}
+
+.banner .banner-texto h2 {
+    color: #f1f1f1;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+.banner .banner-texto h3 {
+    color: #f1f1f1;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+/*--------------------------------------------------------------
+# Banner / Boton Adopta!
+--------------------------------------------------------------*/
+.banner .botonAdop {
+    width: 100%;
+    text-align: right;
+    justify-content: right;
+    padding-right: 5%;
+}
+
+.banner .botonAdop a {
+    appearance: none;
+    background-color: #2954a571;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 500ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+}
+
+.banner .botonAdop a:disabled {
+    pointer-events: none;
+}
+
+.banner .botonAdop a:hover {
+    background-color: #2954a5;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+}
+
+.banner .botonAdop a:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+ /*--------------------------------------------------------------
+# Nosotros
+--------------------------------------------------------------*/
+#nosotros .contenedor {
+    background-image: linear-gradient(rgba(0,0,0,0), #212529), url(../images/nos.jpg);
+    background-position: center;
+    border: 10px solid #212529;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 3vh;
+}
+
+#nosotros .contenedor h1 {
+    color: #fff;
+    font-size: 10vh;
+    font-family: "Pacifico";
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+
+#nosotros .contenedor p {
+    color: #fff;
+    font-family: "Roboto Slab";
+    font-size: 3vh;
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+    text-align: right;
+}
+
+/*--------------------------------------------------------------
+# Objetivos
+--------------------------------------------------------------*/
+#objetivos {
+    background-color: #f3f3f3;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 10vh 0vh 10vh 0vh;
+}
+
+#objetivos .contenedor .obj {
+    width: 95%;
+    border-radius: 1rem;
+    background-image:linear-gradient(rgba(0,0,0,0), #212529), url(../images/obj.jpg);
+    /* background: #212529; */
+    background-position: center;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    /* border-radius: 1rem; */
+    padding: 1vh 0.5vh 1vh 0.5vh;
+    box-shadow: 10px 20px 20px #000000;
+}
+
+#objetivos .contenedor .obj .items {
+    background: #444444c7;
+    width: 95%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5vh;
+    border-radius: 1rem;
+    box-shadow: 10px 20px 10px #ffffff0a;
+    /* transform: skewY(5deg); */
+}
+
+#objetivos .contenedor .obj .items p {
+    color: #fff;
+    font-family: "Raleway";
+    font-weight: normal;
+    text-align: center;
+    font-size: 25px;
+}
+
+/*--------------------------------------------------------------
+# Video
+--------------------------------------------------------------*/
+.video {
+    display: flex;
+    flex-direction: column;
+    background-color: #f3f3f3;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+.video .contenedor {
+    display: flex;
+    width: 100%;
+    min-height: 45vh;
+    background-color: #f3f3f3;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.video #player {
+    box-shadow: 10px 20px 20px black;
+}
+
+/*--------------------------------------------------------------
+# FormContacto
+--------------------------------------------------------------*/
+#contacto .contenedor {
+    background-color: #212529;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+#contacto .contenedor .form-contacto {
+    display: flex;
+    flex-direction: column;
+}
+
+#contacto .contenedor .form-contacto div {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+#contacto .contenedor .form-contacto label {
+    color: #fff;
+    font-size: large;
+    font-weight: bold;  
+}
+
+#contacto .contenedor .form-contacto .btnForm {
+    align-items: center;
+}
+
+#contacto .contenedor .form-contacto .btn {
+    margin-top: 1rem;
+    width: 15vh;
+    height: 3vh;
+    border-radius: 51px;
+    background: #0e269a;
+    box-shadow: inset 13px 13px 26px #0a1a69, inset -13px -13px 26px #1232cb;
+    color: #f1f1f1;
+    font-weight: bold;
+    font-size: 1.5vh;
+}
+
+#contacto .contenedor .form-contacto .btn:hover {
+    color: black;
+    background: #f1f1f1;
+    font-size: 1.75vh;
+    box-shadow: inset 13px 13px 26px #e0e0e3, inset -13px -13px 26px #d7d8d9;
+}
+
+#contacto .contenedor .form-contacto .formulario input {
+    font-weight: normal;
+    font-family: "Raleway";
+}
+
+#contacto .contenedor .form-contacto .formulario textarea {
+    font-weight: normal;
+    font-family: "Raleway";
+}
+
+/*--------------------------------------------------------------
+# Colaboradores
+--------------------------------------------------------------*/
+.partner {
+    height: 30vh;
+    background-color: #f3f3f3;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.partner .contenedor {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.partner .partnerTitulo {
+    font-size: 1.5em;
+}
+
+.partner .contenedor div {
+    background: #ffffff00;
+    color: #fff;
+    flex: none;
+    width: calc((100% - 16%) / 5);
+    align-items: center;
+    justify-content: center;
+}
+
+.partner .contenedor a {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.partner .contenedor img {
+    height: 100px;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #1A1A1A;
+    text-align: center;
+    color: #fff;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4vh;
+    /* position: fixed; */
+}
+
+footer div {
+    margin-left: 2rem;
+}
+
+footer div b {
+    font-family: "Papyrus", sans-serif;
+}
+
+.social-icon {
+    border-radius: 5px;
+    font-size: 24px;
+    margin: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.fab:hover {
+    transform: scale(1.3);
+}
+
+.fa-instagram:hover {
+    color: #c13584;
+}
+
+.fa-facebook:hover {
+    color: #3b5998;
+}
+
+.fa-twitter:hover {
+    color: #00acee;
+}
+
+.fa-whatsapp:hover {
+    color: #25d366;
+}
+
+/*--------------------------------------------------------------
+# Responsivo
+--------------------------------------------------------------*/
+@media (max-width: 768px) {
+    .inicio {
+        display: flex;
+        flex-direction: column;
+    }
+    .izquierda {
+        width: 100%;
+    }
+    .derecha {
+        width: 100%;
+    }
 }

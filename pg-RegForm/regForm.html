@@ -3,14 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
-    <title>página de registro de usuario</title>
+    <link rel="stylesheet" type=text/css href="./styles.css">
+    <title>Registro de Usuario</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Anton&family=Pacifico&family=Roboto+Slab&family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" href="./images/l_blk.png">
 </head>
 <body>
-    <h1>Pag de registro de usuario</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam ullam quia sed laudantium officia labore dolor doloremque provident quam ipsum nobis qui ratione pariatur in fuga deleniti, tenetur inventore facere.</p>
+     <!-- Barra Navegacion -->
+    <div class="navbar-container">
+        <div class="logo">
+            <a href="../index.html" class="navbar-logo">
+                <img src="../images/l_bco_comp.png" alt="ResQAnimalia" width="150" height="75">
+            </a>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="../pg-ini/PgIni.html" class="link">Inicio</a></li>
+                <li><a href="../pg-ini/PgIni.html#nosotros" class="link">Nosotros</a></li>
+                <li><a href="../pg-ini/PgIni.html#contacto" class="link">Contacto</a></li>
+                <li><a href="../pg-Nav/aniCata.html" class="link">Adopta!</a></li>
+                <li><a href="../pg-RegForm/regForm.html" class="link">Registro</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="regContenedor">
+        <h1>Registro de Usuario <br><br><br></h1>
+        <form action="" id="formRegistro" class="formulario">
+            <div>
+                <label for="userName">Nombre de Usuario</label>
+                <input class="cuadroIngreso" type="text" id="userName" name="userName" required>
+                <span class="error" id="userNameError"></span>
+            </div>
+            
+            <div>
+                <label for="password">Contraseña</label>
+                <input class="cuadroIngreso" type="password" id="password" name="password">
+                <span class="error" id="passwordError"></span>
+            </div>
+
+            <div>
+                <label for="name">Nombre</label>
+                <input class="cuadroIngreso" type="text" id="name" name="name">
+                <span class="error" id="nameError"></span>
+            </div>
+
+            <div>
+                <label for="lastName">Apellido</label>
+                <input class="cuadroIngreso" type="text" id="lastName" name="lastName">
+                <span class="error" id="lastNameError"></span>
+            </div>
+
+            <div>
+                <label for="DNI">DNI</label>
+                <input class="cuadroIngreso" type="text" id="DNI" name="DNI">
+                <span class="error" id="DNIError"></span>
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <input class="cuadroIngreso" type="email" id="email" name="email">
+                <span class="error" id="emailError"></span>
+            </div>
+            
+            <input class="boton" type="reset" value="Borrar">
+            <input class="boton enviar" onclick="return enviarform()" type="submit" value="Enviar">
+        </form>
+        
+    </div>
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2023 ResQAnimalia. Todos los derechos reservados.</p>
+        <div>
+            <p>&copy; 2023 <b>ResQAnimalia</b>. Todos los derecho resevados.</p>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.instagram.com" class="social-icon" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com" class="social-icon" target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.twitter.com" class="social-icon" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://wa.me/1234567890" class="social-icon" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
     </footer>
+    <script src="./validacion.js"></script>
 </body>
 </html>
