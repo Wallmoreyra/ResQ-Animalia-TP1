@@ -158,6 +158,17 @@ body, html {
     margin-bottom: 1rem;
 }
 
+.formulario input {
+    font-family: "Raleway";
+    font-weight: normal;
+}
+
+.formulario .error {
+    color: red;
+    font-family: "Raleway";
+    font-weight: bold;
+}
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/

@@ -62,14 +62,14 @@ function validarPassword() {
         mensajesError.push('Ingrese una password');
         passError.textContent = 'Ingrese una password';
     }else if (!tamaño8a15(pass.value)) {
-        mensajesError.push('la pass deve ser entre 8 a 15 caracteres');
-        passError.textContent = 'la pass deve ser entre 8 a 15 caracteres';
+        mensajesError.push('La password debe tener enter 8 y 15 caracteres');
+        passError.textContent = 'La password debe tener enter 8 y 15 caracteres';
     }else if (!unaMayus(pass.value) || !unaMinus(pass.value)) {
-        mensajesError.push('la pass deve contener al menos una min y una mayus!!');
-        passError.textContent = 'la pass deve contener al menos una min y una mayus!!';
+        mensajesError.push('La password debe contener al menos una minúscula y una mayúscula.');
+        passError.textContent = 'La password debe contener al menos una minúscula y una mayúscula.';
     }else if (!unNumero(pass.value) || !contieneSimbolos(pass.value)) {
-        mensajesError.push('la pass deve contener al menos un simb y un num!!');
-        passError.textContent = 'la pass deve contener al menos un simb y un num!!';
+        mensajesError.push('La password debe contener al menos un símbolo y un número.');
+        passError.textContent = 'La password debe contener al menos un símbolo y un número.';
     } else {
         passError.textContent = '';
     }
@@ -86,8 +86,8 @@ function validarNombre() {
         mensajesError.push('Ingrese su nombre');
         nameError.textContent = 'Ingrese su nombre';
     }else if (!tamaño3a20(name.value)) {
-        mensajesError.push('El nombre deve tener entre 3 a 20 caracteres');
-        nameError.textContent = 'El nombre deve tener entre 3 a 20 caracteres';
+        mensajesError.push('El nombre debe tener entre 3 y 20 caracteres.');
+        nameError.textContent = 'El nombre debe tener entre 3 y 20 caracteres.';
     } else {
         nameError.textContent = '';
     }
@@ -104,8 +104,8 @@ function validarApellido() {
         mensajesError.push('Ingrese su apellido');
         lastNameError.textContent = 'Ingrese su apellido';
     }else if (!tamaño3a20(lastName.value)) {
-        mensajesError.push('El apellido deve tener entre 3 a 20 caracteres');
-        lastNameError.textContent = 'El apellido deve tener entre 3 a 20 caracteres';
+        mensajesError.push('El apellido debe tener entre 3 y 20 caracteres.');
+        lastNameError.textContent = 'El apellido debe tener entre 3 y 20 caracteres.';
     } else {
         lastNameError.textContent = '';
     }
@@ -125,8 +125,8 @@ function validarDNI() {
         mensajesError.push('El DNI tiene que tener 8 digitos');
         dniError.textContent = 'El DNI tiene que tener 8 digitos';
     }else if (isNaN(parseInt(dni.value))) {
-        mensajesError.push('El DNI no es un numero!!!');
-        dniError.textContent = 'El DNI no es un numero!!!';
+        mensajesError.push('Solo se admiten números en le campo DNI!');
+        dniError.textContent = 'Solo se admiten números en le campo DNI!';
     } else {
         dniError.textContent = '';
     }
